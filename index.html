@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coding Assesment L2 boilerplate</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="main_container">
+            <div class="product_container">
+                <div class="product_image_container">
+                    <img src="" alt="Product_Image" id="product_image">
+                    <div class="thumbnails_container">
+                        <div class="thumbnails"></div>  
+                    </div>
+                </div>
+                <div class="product_details">
+                    <div class="product_head">
+                        <h1 class="product_vendor"></h1>
+                        <h2 class="product_title"></h2>
+                    </div>
+                    <div class="price_container">
+                        <p class="price"></p>
+                        <p class="percentage_off"></p>
+                    </div>
+                    <p class="compare_at_price"></p>
+                    <div class="color_container">
+                        <h1 class="color_text">Choose a Color</h1>
+                        <div class="all_colors"></div>
+                    </div>
+                    <div class="size_container">
+                        <h1 class="color_text">Choose the Size</h1>
+                        <div class="all_size_selector"></div>
+                    </div>
+                    <div class="quantity_container">
+                        <div class="quantity_selector">
+                            <p class="decrement_value" onclick="decrementValue()">-</p>
+                            <p class="changing_value" id="quantity_value">1</p>
+                            <p class="increment_value" onclick="incrementValue()">+</p>
+                        </div>
+                        <button class="add_to_cart_btn">Add to Cart</button>
+                    </div>
+                    <div class="product_detail_container">
+                        <p id="added_product_details"></p>
+                    </div>
+                    <div class="message_container">
+                        <p class="cart_message"></p>
+                    </div>
+                    <div class="description_container">
+                        <h3>Description</h3>
+                        <p class="product_description"></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

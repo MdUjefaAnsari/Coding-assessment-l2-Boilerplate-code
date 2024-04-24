@@ -126,6 +126,8 @@ const updateAddToCartMessage = () => {
 
     addedProductDetails.textContent = `Embrace Sideboard with Color ${color}, Size ${size} added to cart`;
     addToCartMessage.style.display = "block";
+    addedProductDetails.style.backgroundColor = color;
+    addedProductDetails.style.borderRadius = "7px";
   } else {
     addToCartMessage.style.display = "none";
   }

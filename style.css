@@ -322,16 +322,13 @@ body {
 
 .product_detail_container {
         width: 100%;
-        background-color: #cadf89;
         margin-top: 15px;
         line-height: 2;
-        border-radius: 7px;
         text-align: center;
         font-weight: bold;
         font-size: 15px;
         font-family: Inter;
 }
-
 /* --------------message container end------------- */
 
 /* ------------------Product Description start------------------ */

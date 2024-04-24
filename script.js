@@ -42,7 +42,7 @@ const fetchData = async () => {
       img.alt = "Thumbnail";
       img.classList.add("thumbnail");
       img.addEventListener("click", () => {
-        document.getElementById("product_image").src = image.src;
+        document.getElementById("product_image").src = image.src;//provided link on apis image is not working
       });
       thumbnailsContainer.appendChild(img);
     });

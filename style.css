@@ -8,7 +8,6 @@
 }
 
 body {
-        font-family: "Inter", sans-serif;
         line-height: 1.6;
         background-color: #fff;
 }
@@ -38,8 +37,9 @@ body {
 
 .product_image_container img {
         width: 100%;
+        height: 50%;
         max-width: 100%;
-        max-height: 200px;
+        max-height: 50%;
         display: block;
         border: 1px solid #f9f9f9;
         border-radius: 5px;
@@ -170,6 +170,7 @@ body {
         cursor: pointer;
         margin-left: 10px;
         border-radius: 9px;
+        background-color: rgb(237, 238, 240);
 }
 
 .all_size_selector input[type="radio"]+label:before {
@@ -178,18 +179,20 @@ body {
         left: 0;
         top: 50%;
         transform: translateY(-50%);
-        width: 17px;
-        height: 17px;
+        width: 14px;
+        height: 14px;
         border:2px solid #3a4980;
         border-radius: 50%;
         background-color: #fff;
         color: white;
         box-sizing: border-box;
         margin-left: 5px;
+       
 }
 
 .all_size_selector input[type="radio"]:checked+label:before {
         background-color: #3a4980;
+
 }
 .all_size_selector {
         display: flex;
@@ -209,13 +212,13 @@ body {
 
 .size_type_container label {
         display: inline-block;
-        padding: 5px 10px;
-        border: 1px solid #ccc;
+        padding: 2px 10px;
+        border:none;
         cursor: pointer;
 }
 
 .size_type_container input[type="radio"]:checked+label {
-        background-color: #ccc;
+        background-color: #e2e8f2;
 }
 
 
@@ -321,6 +324,8 @@ body {
         font-family: Inter;
 }
 /* --------------message container end------------- */
+
+/* ------------------Product Description start------------------ */
 .description_container {
         margin-top: 15px;
         margin-bottom: 30px;
@@ -333,10 +338,11 @@ body {
         font-weight: 300;
         font-family: Inter;
         color: #a3a3a3;
-        text-align: left;
+        /* text-align: left; */
         display: inline-block;
         width: 558px;
 }
+/* ------------------Product Description end------------------ */
 
 
 
@@ -345,6 +351,10 @@ body {
 @media screen and (max-width: 767px) {
         .product_container {
                 flex-direction: column;
+                display: inline-block;
+                overflow: hidden;
+                margin-left: 5px;
+               
         }
 
         .product_details {
@@ -353,6 +363,15 @@ body {
 
         .container {
                 padding: 0px;
+        }
+        .description_container{
+                width: 400px;
+        }
+        .product_description{
+                width: 90%;
+                margin-bottom: 50px;
+                font-size: 18px;
+
         }
 }
 

@@ -24,7 +24,7 @@ const fetchData = async () => {
     document.querySelector(".product_description").innerHTML =
       productData.description;
 
-    document.querySelector("#product_image").src = productData.images[2].src[0];
+    document.querySelector("#product_image").src = productData.images[2].src;
 
     const percentageOffElement = document.querySelector(".percentage_off");
     if (!isNaN(percentageOff) && percentageOff > 0) {

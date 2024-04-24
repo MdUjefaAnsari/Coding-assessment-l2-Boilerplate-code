@@ -3,7 +3,7 @@ const fetchData = async () => {
     const response = await fetch(
       "https://cdn.shopify.com/s/files/1/0564/3685/0790/files/singleProduct.json?v=1701948448"
     );
-    
+
     const data = await response.json();
     const productData = data.product;
     console.log(productData);
@@ -19,8 +19,9 @@ const fetchData = async () => {
     document.querySelector(".product_vendor").textContent = productData.vendor;
     document.querySelector(".product_title").textContent = productData.title;
     document.querySelector(".price").textContent = `${productData.price}.00`;
-    document.querySelector(".compare_at_price").textContent =
-      `${productData.compare_at_price}.00` ;
+    document.querySelector(
+      ".compare_at_price"
+    ).textContent = `${productData.compare_at_price}.00`;
     document.querySelector(".product_description").innerHTML =
       productData.description;
 
@@ -107,7 +108,7 @@ const handleColorSelection = (selectedColorDiv, index) => {
   });
   selectedColorDiv.classList.add("selected");
   const selectedColor = selectedColorDiv.dataset.color;
-  selectedColorDiv.style.border = `3px solid ${selectedColor}`
+  selectedColorDiv.style.border = `3px solid ${selectedColor}`;
 };
 
 // Function to update add to cart message
